@@ -1,0 +1,27 @@
+{
+  "name": "northbound-records-example",
+  "version": "1.0.0",
+  "description": "Live example site for a fictional indie record label, built from client-site-starter with a brutalist/monospace design and plain CSS (no Sass, no Tailwind).",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "npm run clean && cross-env ELEVENTY_ENV=production eleventy",
+    "build:ci": "npm run build && node scripts/optimize-media.mjs",
+    "clean": "rimraf dev docs",
+    "watch:eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "cross-env": "^10.1.0",
+    "luxon": "^3.5.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "rimraf": "^6.0.1",
+    "sharp": "^0.33.5"
+  }
+}

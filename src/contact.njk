@@ -1,0 +1,17 @@
+---
+layout: layouts/page.njk
+title: Contact
+permalink: /contact/
+---
+<section class="section" style="border-top:none;">
+  <div class="wrap">
+    <h1>Contact</h1>
+    <ul class="contact-list">
+      {% if business.email %}
+      <li><span>Email</span><span><a href="mailto:{{ business.email }}">{{ business.email }}</a></span></li>
+      {% endif %}
+      <li><span>Demos</span><span>Send a link, not an attachment</span></li>
+      <li><span>Booking</span><span>Same email, subject line "BOOKING"</span></li>
+    </ul>
+  </div>
+</section>

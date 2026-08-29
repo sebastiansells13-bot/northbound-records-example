@@ -1,0 +1,7 @@
+[
+  { "text": "Home", "url": "/" },
+  { "text": "Releases", "url": "/releases/" },
+  { "text": "Tour", "url": "/tour/" },
+  { "text": "About", "url": "/about/" },
+  { "text": "Contact", "url": "/contact/" }
+]

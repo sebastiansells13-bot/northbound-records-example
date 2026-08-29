@@ -1,0 +1,9 @@
+{
+  "list": [
+    { "date": "2026-09-12", "venue": "The Rust Belt", "city": "Cleveland, OH", "artist": "Coyote Radio" },
+    { "date": "2026-09-20", "venue": "Static Room", "city": "Pittsburgh, PA", "artist": "Coyote Radio + Marrow" },
+    { "date": "2026-10-03", "venue": "Basement 21", "city": "Columbus, OH", "artist": "Marrow" },
+    { "date": "2026-10-18", "venue": "The Annex", "city": "Chicago, IL", "artist": "Coyote Radio + Faultline Kids" },
+    { "date": "2026-11-01", "venue": "Low End", "city": "Detroit, MI", "artist": "Faultline Kids" }
+  ]
+}

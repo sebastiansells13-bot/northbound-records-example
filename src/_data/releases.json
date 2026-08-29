@@ -1,0 +1,10 @@
+{
+  "list": [
+    { "title": "Static Weather", "artist": "Coyote Radio", "year": "2026", "format": "LP", "mono": "SW", "bg": "#39ff14", "fg": "#0a0a0a" },
+    { "title": "Low Tide EP", "artist": "Marrow", "year": "2025", "format": "12\" EP", "mono": "LT", "bg": "#f5f5f5", "fg": "#0a0a0a" },
+    { "title": "Nine Rooms", "artist": "Coyote Radio", "year": "2024", "format": "LP", "mono": "9R", "bg": "#0a0a0a", "fg": "#39ff14" },
+    { "title": "Bruise Colored", "artist": "Faultline Kids", "year": "2024", "format": "Cassette", "mono": "BC", "bg": "#f5f5f5", "fg": "#0a0a0a" },
+    { "title": "Split 7\"", "artist": "Marrow / Faultline Kids", "year": "2023", "format": "7\" Single", "mono": "7\"", "bg": "#39ff14", "fg": "#0a0a0a" },
+    { "title": "Long Division", "artist": "Coyote Radio", "year": "2022", "format": "LP", "mono": "LD", "bg": "#0a0a0a", "fg": "#39ff14" }
+  ]
+}

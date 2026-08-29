@@ -1,0 +1,24 @@
+---
+layout: layouts/page.njk
+title: Releases
+permalink: /releases/
+---
+<section class="section" style="border-top:none;">
+  <div class="wrap">
+    <div class="section-heading">
+      <h1>Releases</h1>
+      <p>// the full catalog, newest first</p>
+    </div>
+    <div class="release-grid">
+      {% for r in releases.list %}
+      <div class="release-card">
+        <div class="release-card__art" style="background:{{ r.bg }}; color:{{ r.fg }};">{{ r.mono }}</div>
+        <div class="release-card__body">
+          <h3>{{ r.title }}</h3>
+          <p>{{ r.artist }} — {{ r.format }}, {{ r.year }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

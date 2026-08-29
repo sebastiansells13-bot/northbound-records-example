@@ -1,0 +1,25 @@
+---
+layout: layouts/page.njk
+title: Tour
+permalink: /tour/
+---
+<section class="section" style="border-top:none;">
+  <div class="wrap">
+    <div class="section-heading">
+      <h1>Tour Dates</h1>
+      <p>// countdowns update live, right in your browser</p>
+    </div>
+    <ul class="tour-list">
+      {% for show in tour.list %}
+      <li class="tour-row">
+        <span class="tour-row__date">{{ show.date | readableDateString }}</span>
+        <span>
+          <span class="tour-row__venue">{{ show.venue }} — {{ show.artist }}</span><br>
+          <span class="tour-row__city">{{ show.city }}</span>
+        </span>
+        <span class="tour-row__countdown" data-countdown="{{ show.date }}">—</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
