@@ -40,9 +40,10 @@ eleventyNavigation:
       <h2>Next Show</h2>
       <p>// full dates on the Tour page</p>
     </div>
-    <ul class="tour-list">
-      {% for show in tour.list | head(1) %}
-      <li class="tour-row">
+    {#- Every show is rendered; tour-countdown.js shows the first upcoming one. -#}
+    <ul class="tour-list" data-upcoming-limit="1">
+      {% for show in tour.list %}
+      <li class="tour-row"{% if not loop.first %} hidden{% endif %}>
         <span class="tour-row__date">{{ show.date | readableDateString }}</span>
         <span>
           <span class="tour-row__venue">{{ show.venue }} — {{ show.artist }}</span><br>
@@ -52,5 +53,6 @@ eleventyNavigation:
       </li>
       {% endfor %}
     </ul>
+    <p class="tour-empty" data-tour-empty hidden>// no shows on the books right now — check back soon</p>
   </div>
 </section>
